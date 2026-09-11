@@ -1,6 +1,6 @@
 
 const screens = [...document.querySelectorAll('.screen')];
-const order = ['intro','message','reveal','gallery','date','final'];
+const order = ['intro','message','comic','reveal','gallery','date','final'];
 const progress = document.getElementById('progress');
 const progressBar = document.getElementById('progressBar');
 const buzz = (p) => { if (navigator.vibrate) navigator.vibrate(p); };

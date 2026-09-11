@@ -93,8 +93,8 @@ h1,h2{font-family:"Cormorant Garamond",serif;margin:0;letter-spacing:-.03em}
 .primary{color:#fff;background:linear-gradient(135deg,#ef4758,#d5243c);box-shadow:0 12px 24px #d5243c36}
 .primary:disabled{opacity:.4;box-shadow:none;cursor:not-allowed}
 .ghost{margin-top:10px;color:#7b5967;background:#f7eef2}
-.reveal,.gallery-screen{display:none;flex-direction:column;align-items:stretch;justify-content:flex-start;padding-inline:0;padding-top:90px}
-.reveal.active,.gallery-screen.active{display:flex}
+.reveal,.gallery-screen,.comic-screen{display:none;flex-direction:column;align-items:stretch;justify-content:flex-start;padding-inline:0;padding-top:90px}
+.reveal.active,.gallery-screen.active,.comic-screen.active{display:flex}
 .title-block{text-align:center;padding:0 24px 22px}
 .title-block h2{font-size:45px;line-height:.94}
 .title-block h2 span{color:var(--red)}
@@ -105,7 +105,7 @@ h1,h2{font-family:"Cormorant Garamond",serif;margin:0;letter-spacing:-.03em}
 .photo-label{position:absolute;left:14px;right:14px;bottom:14px;padding:12px 14px;border-radius:16px;background:#fff9;backdrop-filter:blur(10px);font-weight:700;font-size:13px}
 .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0 18px}
 .mini-grid img{width:100%;height:135px;object-fit:cover;border-radius:18px}
-.reveal>.btn,.gallery-screen>.btn{width:calc(100% - 44px);margin:0 22px}
+.reveal>.btn,.gallery-screen>.btn,.comic-screen>.btn{width:calc(100% - 44px);margin:0 22px}
 .compact{padding-bottom:18px}
 .compact h2{font-size:40px}
 .gallery{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 22px;-webkit-overflow-scrolling:touch}
@@ -257,3 +257,10 @@ main{position:relative;z-index:2}
   .slide{transform:none;filter:none}
   .slide figcaption{opacity:1;transform:none}
 }
+
+/* ---------- vinetas ---------- */
+.comic{padding:0 22px;margin-bottom:20px}
+.comic img{display:block;width:100%;height:auto;border-radius:22px;background:#fff;
+  box-shadow:var(--shadow);border:1px solid #74405214}
+.screen.active .comic{animation:popIn .75s .26s cubic-bezier(.2,.9,.25,1) backwards}
+.comic-screen .title-block{padding-bottom:16px}
