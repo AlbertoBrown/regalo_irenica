@@ -280,3 +280,12 @@ main{position:relative;z-index:2}
   letter-spacing:.06em;text-transform:uppercase;color:#b79aa5}
 .lyrics a{display:block}
 .lyrics a:active img{opacity:.85}
+
+/* ---------- hoja de la letra ---------- */
+.lyrics-sheet{margin-top:22px}
+.lyrics-sheet a{display:block}
+.lyrics-sheet a:active img{transform:scale(.99)}
+.lyrics-sheet img{transition:transform .25s ease}
+.sheet-label{margin:0 0 10px!important;text-align:center;font-size:12px!important;font-weight:700!important;
+  letter-spacing:.08em;text-transform:uppercase;color:#a0838e!important}
+.screen.active .lyrics-sheet{animation:riseIn .6s .42s cubic-bezier(.2,.8,.2,1) backwards}
