@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff7fa" />
+  <meta name="description" content="Una sorpresa de aniversario para Irenica 💌" />
+  <title>Para Irenica ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topline">♡ NUESTRO ANIVERSARIO ♡</header>
+
+    <main>
+      <section class="screen active intro" id="intro">
+        <div class="soft-orb orb1"></div>
+        <div class="soft-orb orb2"></div>
+        <div class="spark s1">♡</div>
+        <div class="spark s2">♡</div>
+
+        <div class="intro-copy">
+          <p class="eyebrow">tengo algo para ti</p>
+          <h1>Irenica,<br>abre esta carta</h1>
+          <p class="lead">Porque hay aniversarios que merecen algo más que un regalo.</p>
+        </div>
+
+        <button class="envelope-wrap" id="openLetter" aria-label="Abrir carta">
+          <div class="envelope" id="envelope">
+            <div class="env-back"></div>
+            <div class="letter-mini"><b>Para Irenica</b><small>con todo mi amor</small></div>
+            <div class="env-front"></div>
+            <div class="env-flap"></div>
+            <div class="seal">♡</div>
+          </div>
+          <span>Toca el corazón</span>
+        </button>
+      </section>
+
+      <section class="screen message" id="message">
+        <article class="love-card">
+          <p class="eyebrow">feliz aniversario</p>
+          <h2>QUERIDA<br>IRENICA</h2>
+          <p>
+            Quería darte este regalo de una forma un poco más especial. Sé que me paso más horas
+            pegado al ordenador de las que me gustaría, pero créeme que cuando hago cada
+            proyecto y avanzo en cada cosa, lo único que pienso es en nosotros dos. En algún
+            día tener una casita y que nuestra única preocupación sea discutir por los
+            azulejos que debería tener nuestro baño (spoiler: ganas tú).
+          </p>
+          <p>
+            Irene, hace dos años que llegaste a mi vida, pero yo no siento eso. Yo siento que
+            estás dentro de mí desde siempre. No sabes lo que me ayudas día a día a crecer,
+            lo que aprendo de ti, cómo me inspiras, cómo me animas a superarme, esa imaginación
+            tuya tan maravillosa. Hace tiempo te dije que estar contigo es como estar en el
+            recreo, volver a ser un niño, volver a ser un puto genioooo ❤️. Y es lo que sigo
+            sintiendo.
+          </p>
+          <p>
+            Irenica, te tengo que decir una cosa… este regalo no es solo para ti, sino también
+            para mí. Porque quiero vivir
+            mil momentos contigo, seguir acumulando recuerdos, y este SÉ que te va a gustar
+            muchooo 😉 (o eso espero 🤞)
+          </p>
+          <p class="hand">¡Feliz aniversario mi amorrr!! No cambies nunca nunca ♡</p>
+          <p class="micro">pd: cada año te tengo que sorprender de una forma. Este año ha tocado en digital 🤓💻❤️</p>
+          <button class="btn primary" data-next="reveal">Ver mi regalinchi <span>↓</span></button>
+        </article>
+      </section>
+
+      <section class="screen reveal" id="reveal">
+        <div class="title-block">
+          <p class="eyebrow">tu sorpresa</p>
+          <h2>Nos vamos a las<br><span>Termas de Alange</span></h2>
+          <p>Un día de agua termal, calma, desconexión y nosotros dos.</p>
+        </div>
+
+        <div class="photo-stack">
+          <div class="hero-photo">
+            <img src="assets/termas-03.webp" alt="Piscina termal en Alange">
+            <div class="photo-label">Nuestro próximo recuerdo ♡</div>
+          </div>
+          <div class="mini-grid">
+            <img src="assets/termas-01.jpeg" alt="Piscina exterior en Alange">
+            <img src="assets/termas-02.jpg" alt="Interior histórico del balneario">
+          </div>
+        </div>
+
+        <button class="btn primary" data-next="gallery">Quiero verlo mejor <span>♡</span></button>
+      </section>
+
+      <section class="screen gallery-screen" id="gallery">
+        <div class="title-block compact">
+          <p class="eyebrow">imagínanos aquí</p>
+          <h2>Una escapada para los dos</h2>
+          <p>Desliza las fotos. He elegido algunas para que empieces a imaginar el plan.</p>
+        </div>
+
+        <div class="gallery" id="galleryTrack">
+          <figure class="slide">
+            <img src="assets/termas-01.jpeg" alt="Piscina y jardines de las termas">
+            <figcaption>Empezar el día sin prisas</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/termas-02.jpg" alt="Interior del balneario">
+            <figcaption>Un sitio con muchísima historia</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/termas-03.webp" alt="Piscina junto a arco de piedra">
+            <figcaption>Agua termal y desconexión total</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/termas-04.jpg" alt="Piscina exterior de Alange">
+            <figcaption>Tiempo para nosotros</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/termas-05.jpeg" alt="Piscina interior abovedada">
+            <figcaption>Y rincones con muchísimo encanto</figcaption>
+          </figure>
+        </div>
+
+        <div class="dots" id="dots">
+          <i class="active"></i><i></i><i></i><i></i><i></i>
+        </div>
+        <p class="swipe">desliza ↔</p>
+
+        <button class="btn primary" data-next="date">¿Cuándo te viene bien? <span>🤔</span></button>
+      </section>
+
+      <section class="screen date-screen" id="date">
+        <article class="date-card">
+          <p class="eyebrow">esta parte es tuya</p>
+          <h2>¿Cuándo nos escapamos?</h2>
+          <p class="lead2">Elige el día que te haga más ilusión. Yo me encargo del resto.</p>
+
+          <label for="chosenDate">Nuestra fecha</label>
+          <div class="date-box">
+            <span>♡</span>
+            <input id="chosenDate" type="date" />
+          </div>
+          <p class="date-preview" id="datePreview">Todavía no has elegido fecha.</p>
+
+          <button class="btn primary" id="confirmDate" disabled>Confirmar este día <span>✓</span></button>
+          <p class="micro">No hace falta decidirlo todo hoy. Solo elegir cuándo quieres que hagamos este recuerdo.</p>
+        </article>
+      </section>
+
+      <section class="screen final" id="final">
+        <article class="final-card">
+          <div class="heart-big">♡</div>
+          <p class="eyebrow">ya tenemos plan</p>
+          <h2>Me encanta tu elección</h2>
+          <p class="chosen" id="chosenText"></p>
+          <p>Queda oficialmente elegido nuestro día de aniversario en Alange.</p>
+          <div class="countdown" id="countdown"></div>
+          <p class="micro">Aviso legal: incumplir o saltarse el día elegido conlleva una penalización económica de 1 beso (IVA incluido).</p>
+
+          <a class="btn primary" id="whatsappShare" target="_blank" rel="noopener">
+            Enviarme la fecha por WhatsApp <span>↗</span>
+          </a>
+          <button class="btn ghost" id="restart">Volver a ver la sorpresa</button>
+
+          <p class="signature">Feliz aniversario, Irenica. Te quiero muchísimo. ♡</p>
+        </article>
+      </section>
+    </main>
+
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
