@@ -264,3 +264,19 @@ main{position:relative;z-index:2}
   box-shadow:var(--shadow);border:1px solid #74405214}
 .screen.active .comic{animation:popIn .75s .26s cubic-bezier(.2,.9,.25,1) backwards}
 .comic-screen .title-block{padding-bottom:16px}
+
+/* ---------- letra de la cancion ---------- */
+.lyrics{margin-top:12px;border:1px solid #e3ccd5;border-radius:16px;background:#fffafc;overflow:hidden}
+.lyrics summary{list-style:none;cursor:pointer;padding:13px 16px;font-size:12px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;color:#a0838e;display:flex;
+  align-items:center;justify-content:space-between;gap:10px}
+.lyrics summary::-webkit-details-marker{display:none}
+.lyrics .chev{display:inline-block;font-size:20px;line-height:1;color:var(--red);
+  transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.lyrics[open] .chev{transform:rotate(90deg)}
+.lyrics img{display:block;width:100%;height:auto;border-top:1px solid #f0dee5;background:#fff}
+.lyrics[open] img{animation:riseIn .5s cubic-bezier(.2,.8,.2,1) backwards}
+.lyrics-hint{display:block;padding:9px 16px 12px;text-align:center;font-size:10.5px;
+  letter-spacing:.06em;text-transform:uppercase;color:#b79aa5}
+.lyrics a{display:block}
+.lyrics a:active img{opacity:.85}
